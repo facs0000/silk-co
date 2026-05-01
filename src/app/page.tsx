@@ -5,6 +5,7 @@ import HowItWorks from '@/components/HowItWorks'
 import WhySilk from '@/components/WhySilk'
 import CtaFinal from '@/components/CtaFinal'
 import Footer from '@/components/Footer'
+import WhatsappButton from '@/components/WhatsappButton'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhySilk />
       <CtaFinal />
       <Footer />
+      <WhatsappButton />
     </main>
   )
 }

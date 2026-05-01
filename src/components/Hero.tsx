@@ -95,7 +95,7 @@ export default function Hero() {
             href="#contacto"
             className="inline-block bg-coral hover:bg-[#c94a3b] text-white font-body text-base font-medium tracking-[0.06em] uppercase px-10 py-5 rounded-full transition-colors duration-200 whitespace-nowrap"
           >
-            Agenda tu Consultoría Gratis →
+            Quiero mi Agente IA →
           </a>
           <a
             href="#servicios"

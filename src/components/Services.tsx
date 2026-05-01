@@ -102,7 +102,7 @@ export default function Services() {
             href="#contacto"
             className="inline-block bg-coral hover:bg-[#c94a3b] text-white font-body text-base font-medium tracking-[0.06em] uppercase px-12 py-5 rounded-full transition-colors duration-200"
           >
-            Agenda tu Consultoría Gratis →
+            Quiero mi Agente IA →
           </a>
         </motion.div>
       </div>
