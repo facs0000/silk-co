@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ nombre: '', correo: '', telefono: '' })
+  const [form, setForm] = useState({ nombre: '', correo: '', telefono: '', caso: '' })
   const [status, setStatus] = useState<Status>('idle')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +26,7 @@ export default function ContactForm() {
 
       if (res.ok) {
         setStatus('success')
-        setForm({ nombre: '', correo: '', telefono: '' })
+        setForm({ nombre: '', correo: '', telefono: '', caso: '' })
       } else {
         setStatus('error')
       }
@@ -89,6 +89,14 @@ export default function ContactForm() {
             value={form.telefono}
             onChange={handleChange}
             className={inputClass}
+          />
+          <textarea
+            name="caso"
+            placeholder="Cuéntanos tu caso (opcional)"
+            rows={3}
+            value={form.caso}
+            onChange={(e) => setForm((prev) => ({ ...prev, caso: e.target.value }))}
+            className="w-full bg-navy border border-white/10 focus:border-coral/60 rounded-xl px-4 py-3.5 font-body text-sm text-cream placeholder:text-hint outline-none transition-colors duration-200 resize-none"
           />
 
           {status === 'error' && (

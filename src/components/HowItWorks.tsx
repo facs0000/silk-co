@@ -6,18 +6,23 @@ const steps = [
   {
     number: '01',
     title: 'Diagnóstico',
-    description:
-      'Revisamos tus procesos y detectamos dónde la IA genera más valor.',
+    description: (
+      <>Detectamos dónde la IA te genera <span className="text-coral">más valor</span>.</>
+    ),
   },
   {
     number: '02',
     title: 'Implementación',
-    description: 'Construimos e integramos tu agente en menos de 2 meses.',
+    description: (
+      <>Construimos e integramos tu agente en menos de <span className="text-coral">2 meses</span>.</>
+    ),
   },
   {
     number: '03',
     title: 'Optimización',
-    description: 'Ajustamos, medimos y mejoramos según los resultados.',
+    description: (
+      <>Medimos, ajustamos y mejoramos con <span className="text-coral">datos reales</span>.</>
+    ),
   },
 ]
 

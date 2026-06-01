@@ -8,7 +8,7 @@ export default function Footer() {
             Silk <span className="text-coral">Co.</span>
           </span>
           <span className="font-body text-xs text-hint tracking-[0.04em]">
-            Consultoría de IA para Pymes · Chile
+            Consultoría de IA para Empresas · Chile
           </span>
         </div>
 
@@ -18,7 +18,7 @@ export default function Footer() {
             href="#servicios"
             className="font-body text-sm text-muted hover:text-cream transition-colors duration-200"
           >
-            Servicios
+            Soluciones
           </a>
           <a
             href="#contacto"

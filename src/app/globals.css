@@ -10,3 +10,23 @@ body {
   background-color: #0f1322;
   color: #e8e4dc;
 }
+
+/* ===== Fondos animados ===== */
+@keyframes auroraDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(6%, -4%) scale(1.15); }
+  66%  { transform: translate(-5%, 5%) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes orbFloat {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(3%, -6%); }
+  100% { transform: translate(0, 0); }
+}
+@keyframes gridScroll {
+  0%   { transform: perspective(420px) rotateX(60deg) translateY(0); }
+  100% { transform: perspective(420px) rotateX(60deg) translateY(60px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-anim * { animation: none !important; }
+}

@@ -56,7 +56,7 @@ const differentiators = [
   },
   {
     icon: <ChileIcon />,
-    title: 'Construido para Pymes chilenas, no enterprises',
+    title: 'La robustez de una gran consultora, sin su lentitud ni burocracia',
   },
   {
     icon: <SupportIcon />,

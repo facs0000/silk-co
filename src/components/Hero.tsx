@@ -32,9 +32,9 @@ function PersonCheckIcon() {
 }
 
 const benefits = [
-  { icon: <RowsIcon />, text: 'Estructura tu información' },
-  { icon: <ClockIcon />, text: 'Automatiza' },
-  { icon: <PersonCheckIcon />, text: 'Libera a tu equipo' },
+  { icon: <RowsIcon />, text: <><span className="text-coral">Ordena</span> tu información</> },
+  { icon: <ClockIcon />, text: <><span className="text-coral">Automatiza</span> lo repetitivo</> },
+  { icon: <PersonCheckIcon />, text: <><span className="text-coral">Libera</span> a tu equipo</> },
 ]
 
 export default function Hero() {
@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="font-body text-xs font-normal tracking-[0.08em] uppercase text-hint text-center mb-5"
         >
-          Para dueños de Pymes que quieren crecer
+          IA aplicada a tu negocio
         </motion.p>
 
         {/* Headline */}
@@ -58,9 +58,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-5xl md:text-7xl font-bold leading-[1.06] text-cream tracking-[-0.01em] text-center mb-12"
         >
-          Implementa tu Agente IA
+          Tu primer <span className="text-coral">Agente de IA</span>
           <br />
-          en menos de{' '}
+          funcionando en menos de{' '}
           <span className="text-coral">2 meses.</span>
         </motion.h1>
 
@@ -68,7 +68,7 @@ export default function Hero() {
         <div className="flex flex-col gap-4 mb-14 max-w-fit mx-auto">
           {benefits.map((benefit, i) => (
             <motion.div
-              key={benefit.text}
+              key={i}
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.22 + i * 0.1 }}
@@ -101,7 +101,7 @@ export default function Hero() {
             href="#servicios"
             className="font-body text-sm text-muted hover:text-cream transition-colors duration-200"
           >
-            Ver servicios ↓
+            Ver soluciones ↓
           </a>
         </motion.div>
       </div>
