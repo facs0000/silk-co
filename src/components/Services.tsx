@@ -146,7 +146,7 @@ export default function Services() {
                         <span
                           className={`w-[5px] h-[5px] rounded-full mt-[5px] flex-shrink-0 opacity-70 ${service.dotColor}`}
                         />
-                        {feature}
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
